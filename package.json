@@ -1,0 +1,25 @@
+{
+  "name": "alpine-pokedex",
+  "version": "1.0.0",
+  "description": "Pokedex made with alpinejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opmvpc/alpine-pokedex.git"
+  },
+  "keywords": [
+    "pokedex",
+    "alpinejs",
+    "tailwind",
+    "example"
+  ],
+  "author": "opmvpc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opmvpc/alpine-pokedex/issues"
+  },
+  "homepage": "https://github.com/opmvpc/alpine-pokedex#readme"
+}
