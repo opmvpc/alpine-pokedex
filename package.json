@@ -4,7 +4,13 @@
   "description": "Pokedex made with alpinejs",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +27,15 @@
   "bugs": {
     "url": "https://github.com/opmvpc/alpine-pokedex/issues"
   },
-  "homepage": "https://github.com/opmvpc/alpine-pokedex#readme"
+  "homepage": "https://github.com/opmvpc/alpine-pokedex#readme",
+  "dependencies": {
+    "pokeapi-js-wrapper": "^1.1.2"
+  },
+  "devDependencies": {
+    "alpinejs": "^2.5.0",
+    "cross-env": "^7.0.2",
+    "laravel-mix": "^5.0.4",
+    "tailwindcss": "^1.6.2",
+    "vue-template-compiler": "^2.6.11"
+  }
 }
